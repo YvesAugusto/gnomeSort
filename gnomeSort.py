@@ -42,9 +42,9 @@ def gnomeSort(vet):
         if vet[idx] >= vet[idx - 1]:
             idx = idx + 1
         else:
-            auidx = vet[idx]
+            aux = vet[idx]
             vet[idx] = vet[idx-1]
-            vet[idx-1] = auidx
+            vet[idx-1] = aux
             idx-=1
     return vet
             
